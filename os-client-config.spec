@@ -14,6 +14,7 @@ BuildArch:      noarch
 BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 BuildRequires:  python-sphinx
+BuildRequires:  python-oslo-sphinx
 
 Requires:       PyYAML >= 3.1.0
 # soft dep
