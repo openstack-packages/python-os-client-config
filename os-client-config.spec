@@ -26,7 +26,7 @@ you don't have to know extra info to use OpenStack.
 
 
 %prep
-%setup -q -n %{pypi_name}-%{version}
+%setup -q -n %{pypi_name}-%{upstream_version}
 
 
 %build
