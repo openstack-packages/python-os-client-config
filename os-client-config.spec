@@ -15,6 +15,10 @@ BuildRequires:  python2-devel
 BuildRequires:  python-pbr
 BuildRequires:  python-sphinx
 
+Requires:       PyYAML >= 3.1.0
+# soft dep
+Requires:       python-keystoneclient >= 1.1.0
+
 
 %description
 os-client-config is a library for collecting client configuration for
