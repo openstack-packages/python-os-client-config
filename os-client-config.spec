@@ -4,7 +4,7 @@
 Name:           %{pypi_name}
 Version:        0.8.0
 Release:        1%{?dist}
-Summary:        OpenStack Client Configuation Library
+Summary:        OpenStack Client Configuration Library
 
 License:        ASL 2.0
 URL:            http://www.openstack.org/
