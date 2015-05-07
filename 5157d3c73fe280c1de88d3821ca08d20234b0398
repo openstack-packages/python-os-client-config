@@ -1,0 +1,7 @@
+Code-Review+2: Gaël Chamoulaud <gchamoul@redhat.com>
+Verified+1: Gaël Chamoulaud <gchamoul@redhat.com>
+Submitted-by: Gaël Chamoulaud <gchamoul@redhat.com>
+Submitted-at: Thu, 07 May 2015 09:36:56 +0200
+Reviewed-on: https://review.gerrithub.io/232570
+Project: openstack-packages/os-client-config
+Branch: refs/heads/rpm-master
