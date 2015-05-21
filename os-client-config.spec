@@ -2,8 +2,8 @@
 %global pypi_name os-client-config
 
 Name:           %{pypi_name}
-Version:        0.8.0
-Release:        1%{?dist}
+Version:        XXX
+Release:        XXX
 Summary:        OpenStack Client Configuration Library
 
 License:        ASL 2.0
@@ -17,6 +17,7 @@ BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
 
 Requires:       PyYAML >= 3.1.0
+Requires:       python-appdirs
 # soft dep
 Requires:       python-keystoneclient >= 1.1.0
 
@@ -54,5 +55,3 @@ rm -rf html/.{doctrees,buildinfo}
 %{python2_sitelib}/*.egg-info
 
 %changelog
-* Tue Apr 21 2015 Alan <apevec@gmail.com> - 0.8.0-1
-- Initial package.
