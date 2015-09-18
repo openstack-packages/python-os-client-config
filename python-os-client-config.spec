@@ -16,6 +16,9 @@ BuildRequires:  python-pbr
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
 
+# compat for previous Delorean Trunk package
+Provides:       os-client-config
+
 Requires:       PyYAML >= 3.1.0
 Requires:       python-appdirs
 # soft dep
