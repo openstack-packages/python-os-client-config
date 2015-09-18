@@ -1,7 +1,7 @@
 # Created by pyp2rpm-1.1.1
 %global pypi_name os-client-config
 
-Name:           %{pypi_name}
+Name:           python-%{pypi_name}
 Version:        XXX
 Release:        XXX
 Summary:        OpenStack Client Configuration Library

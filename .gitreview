@@ -1,5 +1,5 @@
 [gerrit]
 host=review.gerrithub.io
 port=29418
-project=openstack-packages/os-client-config
+project=openstack-packages/python-os-client-config
 defaultbranch=rpm-master
