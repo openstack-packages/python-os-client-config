@@ -42,6 +42,10 @@ BuildRequires:  python-appdirs
 BuildRequires:  python-oslotest >= 1.10.0
 BuildRequires:  python-keystoneclient >= 1.6.0
 BuildRequires:  PyYAML
+# Required for tests
+BuildRequires:  python-keystoneauth1
+BuildRequires:  python-jsonschema
+BuildRequires:  python-glanceclient
 
 Requires:       python-setuptools
 Requires:       python-fixtures
