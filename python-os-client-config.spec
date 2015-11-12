@@ -41,6 +41,9 @@ BuildRequires:  python-fixtures
 BuildRequires:  python-appdirs
 BuildRequires:  python-oslotest >= 1.10.0
 BuildRequires:  python-keystoneclient >= 1.6.0
+BuildRequires:  python-glanceclient >= 0.18.0
+BuildRequires:  python-jsonschema >= 2.0.0
+BuildRequires:  python-mock
 BuildRequires:  PyYAML
 
 Requires:       python-setuptools
@@ -49,6 +52,7 @@ Requires:       python-appdirs
 # TODO soft-deps
 #Requires:       python-keystoneauth1
 #Requires:       python-keystoneclient >= 1.6.0
+#Requires:       python-glanceclient >= 0.18.0
 Requires:       PyYAML
 
 %description -n python2-%{pypi_name}
