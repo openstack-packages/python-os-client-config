@@ -37,16 +37,22 @@ Provides:       os-client-config
 BuildRequires:  python2-devel
 BuildRequires:  python-setuptools
 BuildRequires:  python-pbr
-BuildRequires:  python-fixtures
+
 BuildRequires:  python-appdirs
-BuildRequires:  python-oslotest >= 1.10.0
+BuildRequires:  python-fixtures
+BuildRequires:  python-glanceclient >= 0.18.0
+BuildRequires:  python-jsonschema >= 2.0.0
+BuildRequires:  python-keystoneauth1
 BuildRequires:  python-keystoneclient >= 1.6.0
+BuildRequires:  python-mock
+BuildRequires:  python-oslotest >= 1.10.0
 BuildRequires:  PyYAML
 
 Requires:       python-setuptools
 Requires:       python-fixtures
 Requires:       python-appdirs
 # TODO soft-deps
+#Requires:       python-glanceclient >= 0.18.0
 #Requires:       python-keystoneauth1
 #Requires:       python-keystoneclient >= 1.6.0
 Requires:       PyYAML
