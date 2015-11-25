@@ -28,7 +28,7 @@ have to know extra info to use OpenStack
 * If you have neither, you will get a cloud named `defaults` with base defaults
 
 %package -n python2-%{pypi_name}
-Summary:        OpenStack Client Configuation Library
+Summary:        OpenStack Client Configuration Library
 %{?python_provide:%python_provide python2-%{pypi_name}}
 Obsoletes: python-%{pypi_name} < 1.7.3
 # compat for previous Delorean Trunk package
@@ -51,10 +51,12 @@ BuildRequires:  PyYAML
 BuildRequires:  python-keystoneauth1
 BuildRequires:  python-jsonschema
 BuildRequires:  python-glanceclient
+BuildRequires:  python-requestsexceptions
 
 Requires:       python-setuptools
 Requires:       python-fixtures
 Requires:       python-appdirs
+Requires:       python-requestsexceptions
 # TODO soft-deps
 #Requires:       python-glanceclient >= 0.18.0
 #Requires:       python-keystoneauth1
@@ -86,15 +88,25 @@ Documentation for the os-client-config library.
 
 %if 0%{?with_python3}
 %package -n python3-%{pypi_name}
-Summary:        OpenStack Client Configuation Library
+Summary:        OpenStack Client Configuration Library
 %{?python_provide:%python_provide python3-%{pypi_name}}
 BuildRequires:  python3-devel
 BuildRequires:  python3-setuptools
 BuildRequires:  python3-pbr
+BuildRequires:  python3-appdirs
+BuildRequires:  python3-PyYAML
+BuildRequires:  python3-keystoneauth1
+BuildRequires:  python3-requestsexceptions
+BuildRequires:  python3-jsonschema
+BuildRequires:  python3-fixtures
+BuildRequires:  python3-mock
+BuildRequires:  python3-oslotest >= 1.10.0
 
 Requires:       python3-setuptools
 Requires:       python3-fixtures
 Requires:       python3-appdirs
+Requires:       python3-PyYAML
+Requires:       python3-requestsexceptions
 
 %description -n python3-%{pypi_name}
 The os-client-config is a library for collecting client configuration for
