@@ -1,7 +1,7 @@
 %{!?_licensedir:%global license %%doc}
 %global pypi_name os-client-config
 
-%if 0%{?fedora}
+%if 0%{?fedora} >= 24
 %global with_python3 1
 %endif
 
