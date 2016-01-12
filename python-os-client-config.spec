@@ -15,6 +15,8 @@ Source0:        https://pypi.python.org/packages/source/o/%{pypi_name}/%{pypi_na
 
 BuildArch:      noarch
 
+BuildRequires:  git
+
 %description
 The os-client-config is a library for collecting client configuration for
 using an OpenStack cloud in a consistent and comprehensive manner. It
@@ -81,6 +83,7 @@ Summary:        Documentation for OpenStack os-client-config library
 
 BuildRequires:  python-sphinx
 BuildRequires:  python-oslo-sphinx
+BuildRequires:  python-reno
 
 %description -n python2-%{pypi_name}-doc
 Documentation for the os-client-config library.
@@ -127,6 +130,7 @@ Obsoletes: python-%{pypi_name}-doc < 1.7.3
 
 BuildRequires: python3-sphinx
 BuildRequires: python3-oslo-sphinx
+BuildRequires: python3-reno
 
 %description -n python3-%{pypi_name}-doc
 Documentation for the os-client-config library.
@@ -134,6 +138,9 @@ Documentation for the os-client-config library.
 
 %prep
 %setup -qc -n %{pypi_name}-%{upstream_version}
+# XXX Workaround for https://bugs.launchpad.net/reno/+bug/1520096
+# Alternative would be side-effect of autosetup -S git
+git init
 
 mv %{pypi_name}-%{upstream_version} python2
 
