@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa81d914_03e77d13",
+        "filename": "python-os-client-config.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1003941
+      },
+      "writtenOn": "2016-01-13T11:33:10Z",
+      "side": 1,
+      "message": "I\u0027ve managed to get it to work with a variation of patch set 2:\n\n%prep\n%setup -qc -n %{pypi_name}-%{upstream_version}\n# XXX Workaround for https://bugs.launchpad.net/reno/+bug/1520096\n# Alternative would be side-effect of autosetup -S git\ngit init\ngit config --global user.email \"you@example.com\"\ngit config --global user.name \"Your Name\"\ngit add *\ngit commit -m \"Workaround commit\"",
+      "range": {
+        "startLine": 140,
+        "startChar": 0,
+        "endLine": 140,
+        "endChar": 57
+      },
+      "revId": "7a497803e8602edafb7b9a0ad5237407b14b8e04",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
