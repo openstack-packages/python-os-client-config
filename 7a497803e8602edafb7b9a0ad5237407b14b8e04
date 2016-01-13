@@ -22,6 +22,30 @@
       "revId": "7a497803e8602edafb7b9a0ad5237407b14b8e04",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa81d914_63aaf971",
+        "filename": "python-os-client-config.spec",
+        "patchSetId": 3
+      },
+      "lineNbr": 140,
+      "author": {
+        "id": 1000935
+      },
+      "writtenOn": "2016-01-13T12:02:10Z",
+      "side": 1,
+      "message": "autosetup -S git should do basically the same, it just failed due to not enough RTFM:\nautosetup: invalid option -- \u0027q\u0027\nerror: Unknown option q in autosetup(a:b:cDn:TvNS:p:)",
+      "parentUuid": "fa81d914_03e77d13",
+      "range": {
+        "startLine": 140,
+        "startChar": 0,
+        "endLine": 140,
+        "endChar": 57
+      },
+      "revId": "7a497803e8602edafb7b9a0ad5237407b14b8e04",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
