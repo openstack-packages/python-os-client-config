@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a72e520_05a69310",
+        "filename": "python-os-client-config.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1000935
+      },
+      "writtenOn": "2016-03-08T22:00:55Z",
+      "side": 1,
+      "message": "Any reason we couldn\u0027t move doc build to %build ?",
+      "revId": "31286a3d85f6da7238b7ad75031893985195303d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
