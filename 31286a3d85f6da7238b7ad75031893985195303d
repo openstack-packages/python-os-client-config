@@ -16,6 +16,24 @@
       "revId": "31286a3d85f6da7238b7ad75031893985195303d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a72e520_055933fe",
+        "filename": "python-os-client-config.spec",
+        "patchSetId": 2
+      },
+      "lineNbr": 150,
+      "author": {
+        "id": 1000935
+      },
+      "writtenOn": "2016-03-08T23:03:26Z",
+      "side": 1,
+      "message": "ok, let\u0027s keep it in %install - I see inconsistency across packages which we should fix separately.",
+      "parentUuid": "5a72e520_05a69310",
+      "revId": "31286a3d85f6da7238b7ad75031893985195303d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
