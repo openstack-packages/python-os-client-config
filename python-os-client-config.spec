@@ -8,12 +8,12 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           python-%{pypi_name}
-Version:        XXX
-Release:        XXX
+Version:        1.16.0
+Release:        1%{?dist}
 Summary:        OpenStack Client Configuration Library
 License:        ASL 2.0
 URL:            https://github.com/openstack/%{pypi_name}
-Source0:        https://pypi.python.org/packages/source/o/%{pypi_name}/%{pypi_name}-%{version}.tar.gz
+Source0:        https://pypi.python.org/packages/source/o/%{pypi_name}/%{pypi_name}-%{version}%{?milestone}.tar.gz
 
 BuildArch:      noarch
 
@@ -186,3 +186,5 @@ rm -rf .testrepository
 %endif
 
 %changelog
+* Wed Mar 23 2016 RDO <rdo-list@redhat.com> 1.16.0-0.1
+-  Rebuild for Mitaka 
